@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media print {
+    /* Hide everything except the receipt */
+    body * {
+      visibility: hidden;
+    }
+    #receipt, #receipt * {
+      visibility: visible;
+    }
+    #receipt {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    /* Hide navbar and buttons when printing */
+    nav, button, a:not(#receipt a) {
+      display: none !important;
+    }
+  }
+
+  @keyframes progressBar {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  
+  @media print {
+    body * { visibility: hidden; }
+    #receipt, #receipt * { visibility: visible; }
+    #receipt {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    nav, button, a {
+      display: none !important;
+    }
+  }
