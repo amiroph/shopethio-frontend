@@ -104,10 +104,10 @@ export default function Login() {
                 </button>
               </form>
 
-              <div className="mt-6 p-4 rounded-xl text-xs" style={{ backgroundColor: "#F8F5FF" }}>
+             {/*  <div className="mt-6 p-4 rounded-xl text-xs" style={{ backgroundColor: "#F8F5FF" }}>
                 <p className="font-semibold mb-1" style={{ color: "#1A0A2E" }}>Test Account:</p>
                 <p style={{ color: "#718096" }}>admin@shopethio.com / password</p>
-              </div>
+              </div>*/} 
             </div>
           </div>
         </div>
